@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>A demonstration of how to access a Text Field</h3>
+
+<input type="text" id="myText" value="Some text...">
+
+<p>Click the "Try it" button to get the text in the text field.</p>
+
+<button onclick="myFunction()">Text Box value</button>
+<br>
+<button onclick="theNameGame()">Play the name game</button>
+<p id="demo"></p>
+
+<p id="theNameGameName"></p>
+<br>
+<p id="theNameGameAge"></p>
+<br>
+<p id="theNameGameCount"></p>
+
+<script>
+
+
+function myFunction() {
+  var x = document.getElementById("myText").value;
+  document.getElementById("demo").innerHTML = x;
+}
+
+function theNameGame() {
+    var name = prompt("What is your name?");
+    var ageString = prompt("How old are you? ");
+    age = parseInt(ageString,10);
+    document.getElementById("theNameGameName").innerHTML = "Your name is " + name;
+    document.getElementById("theNameGameAge").innerHTML = " and you are " + age + " years old";
+    document.getElementById("theNameGameCount").innerHTML = "I can count up to " + age + " (check the console!!!)";
+    for(var i = 0; i <= age; i++){
+        console.log(i);
+    }
+
+    
+
+
+
+
+
+}
+
+
+
+
+</script>
+
+</body>
+</html>
