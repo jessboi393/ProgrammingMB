@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<header>
+
+
+
+</header>
+
+
+<body>
+
+<button onclick="myFunction()">Print Once</button>
+<br>
+<button onclick="myLoop()">Print Multiple Times </button>
+<br> 
+<button onclick="getUserInput()">Get User Input </button>
+<button onclick="conditional()">Show if, else </button>
+
+
+<p id="hello"> </p>
+
+<p id="number"> </p>
+
+<p id="number1"> </p>
+
+<p id="name"> </p>
+
+<p id="character"> </p>
+
+<p id="function"> </p>
+
+<p id="loop"> </p>
+
+<p id="userInput"> </p>
+
+<p id="conditionStatement"> </p>
+
+
+
+
+
+<script>
+
+function myLoop(){
+
+var counter = 0;
+
+var newName = "Michael ";
+
+while(counter < 10){
+
+document.getElementById("loop").innerHTML += newName;
+counter++;
+
+
+
+
+}
+
+
+
+
+
+}
+
+
+
+function myFunction(){
+
+var insideFunction = "Denosic ";
+
+document.getElementById("function").innerHTML += insideFunction;
+
+
+}
+
+
+
+function getUserInput(){
+
+var input = prompt("Enter input ");
+document.getElementById("userInput").innerHTML = input;
+
+}
+
+
+function conditional(){
+document.getElementById("conditionStatement").innerHTML = "Choose 4 options ";
+document.getElementById("conditionStatement").innerHTML += "	1) Addition";
+document.getElementById("conditionStatement").innerHTML += "	2) Subtraction";
+document.getElementById("conditionStatement").innerHTML += 	"3) Multiplication";
+document.getElementById("conditionStatement").innerHTML += 	"4) Division";
+
+var answer = prompt("Which would you like to do?");
+
+if(answer == 1){
+	console.log(1 + 1);
+}
+
+else if(answer == 2){
+	console.log(1-1);
+}
+
+else if(answer == 3){
+	console.log(2*2);
+}
+
+else if(answer == 4){
+	console.log(2/2);
+}
+
+}
+
+var hello = "Hello World";
+
+document.write(hello);
+
+var number = 1;
+
+var number1 = 1.0;
+
+var name = "Michael";
+
+var character = 'c';
+
+
+
+
+
+
+
+
+document.getElementById("hello").innerHTML = hello;
+document.getElementById("number").innerHTML = number;
+document.getElementById("number1").innerHTML = number1;
+document.getElementById("name").innerHTML = name;
+document.getElementById("character").innerHTML = character;
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+</body>
+
+
+</html>
+
+
+
+
+
+
+
