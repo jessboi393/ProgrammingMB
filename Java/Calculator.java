@@ -18,9 +18,9 @@ public class Calculator {
 
 		Scanner sc = new Scanner(System.in);
 		
-		int a;
-		int b;
-		int result;
+		double a;
+		double b;
+		double result;
 		
 		System.out.println("What kind of calculation would you like to do?");
 		System.out.println("1): Addition");
@@ -33,40 +33,58 @@ public class Calculator {
 		
 		if(answer == 1) {
 			System.out.println("What is the first number you would like to add?");
-			a = sc.nextInt();
+			a = sc.nextdouble();
 			System.out.println("What is the second number you would like to add?");
-			b = sc.nextInt();
+			b = sc.nextdouble();
 			result = a + b;
 			System.out.println("The sum is: " + result);
 		}
 		
 		else if(answer == 2) {
 			System.out.println("What is the number you are subtracting from? ");
-			a  = sc.nextInt();
+			a  = sc.nextdouble();
 			System.out.println("What is the number being subtracted?");
-			b = sc.nextInt();
+			b = sc.nextdouble();
 			result = a - b;
 			System.out.println("The result is: " + result);
 		}
 		
 		else if(answer == 3) {
 			System.out.println("What is the first number you are multiplying? ");
-			a  = sc.nextInt();
+			a  = sc.nextdouble();
 			System.out.println("What is the second number you are multiplying? ");
-			b = sc.nextInt();
+			b = sc.nextdouble();
 			result = a * b;
 			System.out.println("The result is: " + result);
-		}
+		}/*division*/
 		
 		else if(answer == 4) {
-			
-		}
+			System.out.println("What is the first number you are dividing? ");
+			a  = sc.nextdouble();
+			System.out.println("What is the second number you are dividing? ");
+			b = sc.nextdouble();
+			result = a / b;
+		
+		
+		
+		}/*while loop*/ 
+		system.out.println(i);
+		i++;
+		while (i <= 10)	System.out.println("The result is: " + result);
+		
+	
+	
+	
+	        }/*exit feature*/
 		
 		else if(answer == 5) {
 			System.out.println("Exit");
-			sc.close();
+			sc.close(Calcularor.java);
 			return;
-		}
+		}/*while loop*/ 
+		system.out.println(i);
+		i++;
+		while (i <= 10)
 	
 		
 		
